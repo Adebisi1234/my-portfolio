@@ -1,0 +1,25 @@
+div.day {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../night/sun.svg);
+}
+
+.nightday {
+    background: url(../../night/night.png);
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-position: top;
+    background-size: contain;
+}
+
+.dark_mode {
+    background-color: #1f1815;
+    color: white;
+}
+

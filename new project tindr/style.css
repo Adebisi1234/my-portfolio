@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+div.day {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url(night/sun.svg);
+}
+
+
+body {
+    background: black;
+    --light: white;
+    --dark: black;
+}
+.hidden {
+    visibility: hidden;
+}
+
+/* Header */
+
+header {
+    background: white;
+}
+
+nav {
+    background-color: #eee;
+    height: 10vh;
+}
+
+h1 {
+    display: inline-block;
+    color: teal;
+}
+
+h1:hover {
+    color: teal;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.background {
+    background-color: transparent;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+form {
+    height: fit-content;
+    margin: auto 0;
+}
+input {
+    margin: 10px;
+    height: 5vh;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    line-height: 10vh;
+    width: 15%;
+}
+
+li:hover {
+    color: teal;
+}
+
+/* Section 1 */
+.section {
+    height: 100vh;
+}
+
+.section1 {
+    height: 100vh;
+    background: url(background/1.jpg) rgba(0, 0, 0, 0.349);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-image: url(background/2.jpg);
+    transition: all 0.3s ease;
+}
+.background2 {
+    background-image: url(background/1.jpg);
+}
+
+.background3 {
+    background-image: url(background/3.jpg);
+}
+span {
+    display: block;
+}
+
+.center {
+    margin: auto 0;
+    color: white;
+}
+
+.button {
+    --color: teal;
+    margin-top: 4vh;
+    background-color: var(--color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.button1 {
+    --color: white;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+/* Section 2 */
+
+.section2 {
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+}
+
+.image {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    padding: 0 5%;   
+}
+
+.section2 .container {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #eee;
+    height: 400px;
+    padding-top: 5%;
+    color: black;
+}
+
+.container section{
+    display: inline-block;
+}
+
+.section2 h1{
+    margin: 0;
+}
+
+.section2 h2{
+    margin-bottom: 2%;
+    margin-top: 0.3%;
+    color: teal;
+}
+.section2 .container section{
+    width: 25vw;
+}
+section .button {
+    margin: auto;
+}
+
+/* section 3 */
+
+.section3 {
+    color: white;
+    text-align: center;
+    background: url(background/section3.jpg)rgba(5, 5, 5, 0.466);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: 100vw;
+    background-position: center;
+}
+.section3 .container {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.section3 .container section {
+    margin: 16vh auto;
+}
+
+/* Section 4 */
+.section4 {
+    height: fit-content;
+    background-color: white;
+}
+.section4 .container {
+    grid-template-columns: repeat(6,1fr);
+}
+
+.section5 {
+    text-align: center;
+    background-image: url(background/section5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* footer */
+
+footer {
+    color: white;
+    background-color: rgba(47, 47, 78, 0.829);
+}
+
+footer form {
+    margin-top: 10vh;
+}
+
+footer input {
+    border-radius: 0;
+}
+
+footer button {
+    margin-left: 10px;
+}
+
+.footer {
+    padding-left: 30%;
+    background-color: rgba(30, 30, 49, 0.829);
+    color: white;
+}
+
+/* Night/day */
+
+.night {
+    background: black;
+    color: white;
+}
+
+nav.night {
+    background: rgb(109, 95, 95);
+}
+
+.container.night {
+    background-color: rgb(46, 41, 41);
+}
+
+.nightday {
+    background: url(night/night.png);
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-position: top;
+    background-size: contain;
+}
+
+/* Gender Image */
+
+.fun {
+    background-image: url(date/fun.jpeg);
+}
+
+.over {
+    background-image: url(date/40.jpeg);
+}
+
+.all {
+    background-image: url(date/all.jpeg);
+}
+
+.Others {
+    background-image: url(gender/nonbinary.jpg);
+    background-position: top;
+    background-size: contain;
+}
+.men {
+    background-image: url(gender/male.png);
+    background-position: top;
+    background-size: contain;
+}
+.woman {
+    background-image: url(gender/female.png);
+    background-position: top;
+    background-size: contain;
+}
+.total {
+    background-image: url(gender/equal.png);
+    background-position: top;
+    background-size: contain;
+}
+
+input {
+    border: 5px double dodgerblue;
+}
+
+/* animations */
+
+.section1 h1, .section1 span{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.section1 h1.slide, .section1 span.slide{
+    opacity: 1;
+    transform: translateY(0px);
+    color: white;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.white {
+    background-color: white;
+}
+
+/* images */
+
+.no1 {
+    background-image: url(people/1.jpg);
+}
+.no2 {
+    background-image: url(people/2.jpg);
+}
+.no3 {
+    background-image: url(people/3.jpg);
+}
+.no4 {
+    background-image: url(people/4.jpg);
+}
+.no5 {
+    background-image: url(people/5.jpg);
+}
+
+/* test */
+
+.nav-scrolled {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}

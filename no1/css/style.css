@@ -1,0 +1,109 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     background: rgb(93, 95, 114);
+     color: white;
+}
+.head {
+     width: fit-content;
+     margin: 1%;
+     display: inline-block;
+}
+p.head {
+     float: left;
+}
+img.head {
+     display: inline-block;
+     margin: auto 30%;
+}
+button {
+     float: right;
+}
+main {
+     background: rgb(93, 95, 114);
+     padding: 0 3%;
+     color: white;
+}
+.main {
+     text-align: center;
+     margin-bottom: 50px;
+}
+section.container {
+     padding: 0 30%;
+}
+section.first, section.thrid {
+     background: white;
+     padding: 35%;
+     height: 100px;
+}
+section.second {
+     background: grey;
+     height: 500px;
+     padding: 0 20%;
+}
+section.second section {
+     display: inline-block;
+     width: 45%;
+     height: 100px;
+}
+section button{
+     display: block;
+     height: 50px;
+     width: 30%;
+     float: unset;
+     margin-left: 25%;
+}
+footer {
+     background: gray;
+     height: 400px;
+}
+footer img {
+     display: block;
+     float: right;
+}
+footer p {
+     display: inline;
+}
+footer section{
+     display: inline-block;
+     width: 30%;
+}
+footer img{
+     float: left;
+     width: fit-content;
+     margin-left: 1%;
+}
+footer section + section {
+     margin-left: 60%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
